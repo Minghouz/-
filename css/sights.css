@@ -1,0 +1,37 @@
+h4{
+	width: 150px;
+    height:20px;
+    text-align: center;
+    border-radius: 50%;
+    outline: 1px solid snow;
+    -webkit-animation: mycolor 5s infinite; 
+    animation: mycolor 5s infinite;
+}
+@-moz-keyframes mycolor{
+	50%{outline: 10px double plum;
+	}
+}
+@keyframes mycolor{
+	50%{outline:10px double plum;}
+}
+/*图片特效*/
+.container .row .col-md-5,.col-md-6 img{
+	-webkit-animation: mymove 7s infinite; 
+    animation: mymove 7s infinite;
+}
+.container .row .col-md-12,.col-md-3 img{
+	-webkit-animation: mymove 7s infinite; 
+    animation: mymove 7s infinite;
+}
+@-webkit-keyframes mymove {
+    50% {
+        -webkit-filter: grayscale(100%); 
+        filter: grayscale(100%);
+    }
+}
+@keyframes mymove {
+    50% {
+        -webkit-filter: grayscale(100%); 
+        filter: grayscale(100%);
+    }
+}

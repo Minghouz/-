@@ -1,0 +1,52 @@
+.container h3{
+	text-align: center;	
+}
+.container h4{
+	width:400px;
+	height:40px;
+	color: white;
+	font-family:白舟白雨書体;
+	text-align: center;
+	line-height: 15px;
+	background: #222222;
+	border: 10px solid #222222;
+	border-left-color:#222222;
+	border-bottom-color:#222222;
+	border-top-right-radius: 100px;
+	border-bottom-left-radius: 100px;
+}
+.row{	
+	margin: 0 10px;
+}
+.container .col-md-12 .col-md-3 .img-responsive{
+	border: hidden;
+	width: 250px;
+	height: 250px;
+}
+/*摄影获奖作品效果 */
+.container .col-md-12 .col-md-3 img:before{	
+	border: 5px solid skyblue;
+	transition: all 0.5s ease 2s;
+	-webkit-transition: all 0.5s ease 2s;
+	-moz-transition: all 0.5s ease 2s;
+	-ms-transition: all 0.5s ease 2s;
+}
+.container .col-md-12 .col-md-3 img{ 
+    -webkit-animation: mymove 7s infinite;
+    animation: mymove 7s infinite;	
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {
+        -webkit-filter: grayscale(100%); 
+        filter: grayscale(100%);
+    }
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {
+        -webkit-filter: grayscale(100%); 
+        filter: grayscale(100%);
+    }
+}

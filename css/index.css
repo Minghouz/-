@@ -1,0 +1,333 @@
+﻿body{	
+	color: write;
+	
+}
+h3{
+	background: black;
+	color: snow;
+	margin: 0 auto;
+	width: 150px;
+	height: 30px;
+	animation:myflash 5s infinite;
+}
+@font-face {
+	font-family:BlackCasper;
+	src: url('../bootstrap/fonts/BlackCasper.ttf');
+}
+@font-face {
+	font-family:白舟白雨書体;
+	src: url('../bootstrap/fonts/白舟白雨書体.ttf');
+}
+@keyframes rotate1{
+	0%{
+		transform: rotateZ(0deg);
+	}
+	100%{
+		transform: rotateZ(-360deg);
+	}
+}
+
+/*轮播代码开始*/
+.carousel{
+	margin-bottom: 30px;
+}
+.carousel-inner {
+	width: 100%;
+	height: 550px;
+}
+.carousel-inner .item img{
+	margin: 0 auto;
+}
+.carousel .item{
+	border:solid 2px #aassdd;	
+	overflow: hidden;
+	position: relative;	
+}
+/*轮播代码结束*/
+/*左右切换按钮*/
+ .carousel-control  span{opacity:0; transition:all 0.6s ease;}
+.bigCarousel:hover span{opacity: 1;}
+/*首页精选案例图片代码开始*/
+.container h3,p,li{
+     line-height: 26px;
+	padding: 5px;
+	
+}
+.container .thumbnail{
+	width: 359px;
+	height: 300px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+}
+.container .row .pic{
+	overflow: hidden;
+	margin-bottom: 30px !important;
+}
+.container .row .pic:hover:before{
+	top:300px;
+}
+/*精选案例图片css效果*/
+.container .row .pic:before{
+	content: "CASES";
+	color:white;
+	font-size:50px;
+	font-family:白舟白雨書体;
+	text-align: center;
+	line-height: 300px;
+	position: absolute;
+	top:0px;
+	left: -45px;
+	width: 359px;
+	height:300px;
+	background-color: rgba(120,140,120,0.5);
+	transform: rotate(0deg) translateX(60px);
+	-webkit-transform: rotate(0deg) translateX(60px);
+	-moz-transform: rotate(0deg) translateX(60px);
+	-ms-transform: rotate(0deg) translateX(60px);
+	
+	transform-origin: 100% 0;
+	-webkit-transform-origin: 100% 0;
+	-moz-transform-origin: 100% 0;
+	-ms-transform-origin: 100% 0;
+	
+	transition: all 0.5s ease 0.1s;
+	-webkit-transition: all 0.5s ease 0.1s;
+	-moz-transition: all 0.5s ease 0.1s;
+	-ms-transition: all 0.5s ease 0.1s;
+
+}
+/*首页精选案例图片代码结束*/
+/*胶囊代码开始*/
+.tab-content .tab-pane p{
+	text-indent: 2em;
+	padding: 5px;
+	color: black;
+}								
+.tab-content .tab-pane .col-md-3 ul li{
+	list-style-type: none;
+	height: 30px;	
+}
+/*胶囊代码结束*/
+/*字体图标效果*/
+.fa-asl-interpreting{
+	color: white;
+}
+.fa-asl-interpreting:hover{
+	color: #E2E2E2;	
+}
+.fa-video-camera{
+	color: white;
+}
+.fa-spinner{
+	color:white;
+	/*animation:rotate1 4s linear infinite;*/
+}
+/*字体图标效果结束*/
+/*摄影景点代码开始*/
+.sy .btr{
+	padding-top:50px
+}
+.btr{	
+	text-align: center;
+	padding-bottom: 30px;
+     padding-top: 30px;
+}
+
+.btr span{
+	font-size: 22px;
+	font-weight: lighter;
+}
+.img-responsive{
+	margin-top: 5px;
+	width: 250px;
+	height: 150px;
+}
+
+.jd{
+	margin-bottom: 50px;
+}
+.view{
+	border:solid 2px #aassdd;	
+	overflow: hidden;
+	position: relative;	
+
+}
+/*摄影景点图片效果*/
+.view img{
+	width: 250px;
+	height: 250px;
+	margin-bottom: 20px;
+}
+.view:after{
+	content: "photo";
+	color:black;
+	font-size:80px;
+	font-family:BlackCasper;
+	text-align: center;
+	line-height: 250px;
+	position: absolute;
+	bottom: -300px;
+	left: 76px;
+	width: 250px;
+	height: 250px;
+	background-color: rgba(0,10,10,0.1);
+	transform: rotate(0deg) translateX(-60px);
+	-webkit-transform: rotate(0deg) translateX(-60px);
+	-moz-transform: rotate(0deg) translateX(-60px);
+	-ms-transform: rotate(0deg) translateX(-60px);
+
+	transform-origin:0 100%;
+	-webkit-transform-origin:0 100%;
+	-moz-transform-origin: 0 100%;
+	-ms-transform-origin:0 100%;
+	
+	transition: all 0.5s ease 0.05s;
+	-webkit-transition: all 0.5s ease 0.05s;
+	-moz-transition: all 0.5s ease 0.05s;
+	-ms-transition: all 0.5s ease 0.05s;
+	
+}
+.view:hover:after{
+	bottom:20px;
+}
+/*摄影景点代码结束*/
+
+/*欢迎代码*/	
+			@-webkit-keyframes mylasting1
+			{			
+			from{top:100px; left:0;-webkit-transform:rotate(180deg)}
+			to{top:100px;left:150px; -webkit-transform:rotate(720deg)}
+			}
+			@-webkit-keyframes mylasting2
+			{
+			from{top:100px; left:0;-webkit-transform:rotate(180deg)}
+			50%{top:100px;left:150px; -webkit-transform:rotate(540deg) }
+			to{top:100px;left:400px; -webkit-transform:rotate(720deg)}
+			}
+			@-webkit-keyframes mylasting3
+			{			
+			from{top:100px; left:0;-webkit-transform:rotate(180deg)}
+			50%{top:100px;left:150px; -webkit-transform:rotate(540deg) }
+			to{top:100px;left:600px; -webkit-transform:rotate(720deg)}
+			}
+			@-webkit-keyframes mylasting4
+			{
+			from{top:100px; left:0;-webkit-transform:rotate(180deg)}
+			50%{top:100px;left:150px; -webkit-transform:rotate(540deg) }
+			to{top:100px;left:800px; -webkit-transform:rotate(720deg)}
+			}
+		    @-webkit-keyframes mylasting5
+			{
+			from{top:100px; left:0;-webkit-transform:rotate(180deg)}
+			50%{top:100px;left:150px; -webkit-transform:rotate(540deg) }
+			to{top:100px;left:1000px; -webkit-transform:rotate(720deg)}
+			}			
+			.b{
+				width: 100px;
+				height: 100px;
+				line-height: 100px;
+				font-size:18px ;
+				text-align: center;
+				color: black;
+				background: snow;
+				position: absolute;
+				border-radius: 50%;				
+				animation: mylasting2 5s;
+				/*动画停留在终点位置*/
+				animation-fill-mode:forwards;
+			}
+			.c{
+				width: 100px;
+				height: 100px;
+				line-height: 100px;
+				text-align: center;
+				color: snow;
+				background:black;
+				position: absolute;
+				border-radius: 50%;
+				animation: mylasting3 7s;
+				/*动画停留在终点位置*/
+				animation-fill-mode:forwards;
+			}
+			.d{
+				width: 100px;
+				height: 100px;
+				line-height: 100px;
+				text-align: center;
+				color: black;
+				background: white;
+				position: absolute;
+				border-radius: 50%;
+				animation: mylasting4 9s;
+				/*动画停留在终点位置*/
+				animation-fill-mode:forwards;
+			}
+			.e{
+				width: 100px;
+				height: 100px;
+				line-height: 100px;
+				text-align: center;
+				color: white;
+				background:black;
+				position: absolute;
+				border-radius: 50%;
+				animation: mylasting5 11s;
+				/*动画停留在终点位置*/
+				animation-fill-mode:forwards;
+			}
+			.b,.c,.d,.e{
+				font-size: 40px;
+				font-family: 白舟白雨書体;
+			}
+/*欢迎你*/
+@media only screen and (min-width: 100px) and (max-width: 800px) {
+	.b,.c,.d,.e{
+				display: none;
+			}
+}
+/*工作室代码开始*/
+.mid{
+	clear: both;
+	height: 300px;
+	border: 1px solid #C0C0C0;
+	margin-bottom: 20px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+.mid .left h4{
+	text-align: left;
+}
+form .form-control{
+	border: 0;
+	border-radius: 0;
+	background:#F5F5F5;
+	height: 40px;
+	margin-bottom: 20px;
+}
+form .form-group .form-control{
+	height: 120px;	
+}
+form .form-group .btn-default{
+	border: 0;
+	border-radius: 0;
+	width: 90px;
+	color: white;
+	background: black;
+}
+form .form-group .btn-default:hover{
+	background: #D3D3D3;
+	color: white;
+}
+/*工作室代码结束*/
+
+/*左右切换按钮 Start*/
+.carousel-wrapper a.left,.carousel-wrapper a.right{
+	opacity: 0;
+}
+.carousel-wrapper:hover a.carousel-control{
+	opacity:0.3;
+}
+/*左右切换按钮 END*/
